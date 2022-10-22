@@ -57,8 +57,8 @@ const solveQuadraticEquation = () => {
     <p>Therefore the solution is y = c<sub>1</sub>e<sup>${rootFirst}x</sup> + c<sub>2</sub>xe<sup>${rootSecound}x</sup></p>`;
 
   }else if(determinant < 0){
-    rootFirst = `${partSol} + ${(negDeterminant + 'i')}`
-    rootSecound = `${partSol} - ${(negDeterminant + 'i')}` 
+    rootFirst = `${partSol}+${(negDeterminant + 'i')}`
+    rootSecound = `${partSol}-${(negDeterminant + 'i')}` 
     quadraticSolutions.innerHTML =  
     `<p>The roots are ${rootFirst} and ${rootSecound} by using the almighty formmula</p>
     <p>Then we get our α real part of our complex equation which is ${partSol} and β the imaginary part which is ${negDeterminant}</p>
