@@ -1,25 +1,4 @@
 input{
     width: 3rem;
 }
-#d2::after{
-    content: "''";
-    width: 10px;
-    height: 10px;
-    color: red;
-}
-#d1::after{
-    content: "'";
-    width: 10px;
-    height: 10px;
-    color: red;
-}
-.squared{
-    position:relative;
-    margin-left: 4px;
-    margin-right: 4px;
-}
-.squared::after{
-    content: '2';
-    font-size: 10px;
-    position: absolute;
-}
+
