@@ -1,4 +1,29 @@
+:root{
+    --font-default: 1.5rem;
+}
 input{
     width: 3rem;
+    font-size: var(--font-default);
 }
-
+body{
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-default);
+    color: white;
+    background-color: black;
+    font-weight: 600;
+}
+sup{
+    color: red;
+    font-weight: bolder;
+}
+button{
+    font-size: var(--font-default);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+@media (max-width: 550px) {
+    :root{
+        --font-default: 1rem;
+    }
+}

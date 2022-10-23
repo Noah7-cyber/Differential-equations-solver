@@ -16,7 +16,12 @@ const solveQuadraticEquation = () => {
   a = parseInt(a);
   b = parseInt(b);
   c = parseInt(c);
-
+  a= eval(a)
+  b= eval(b)
+  c= eval(c)
+  if((a==0 && b==0 && c==0)||(a==0)){
+    return
+  }
   if (b > 0 && c > 0) {
     result.innerHTML = `The general equation is of 
         ${a}m<sup>2</sup>+ ${b}m + ${c}. This is done by letting y= e<sup>2m</sup>`;
@@ -61,9 +66,9 @@ const solveQuadraticEquation = () => {
     rootSecound = `${partSol}-${(negDeterminant + 'i')}` 
     quadraticSolutions.innerHTML =  
     `<p>The roots are ${rootFirst} and ${rootSecound} by using the almighty formmula</p>
-    <p>Then we get our α real part of our complex equation which is ${partSol} and β the imaginary part which is ${negDeterminant}</p>
+    <p>Then we get our α real part of our complex equation which is ${partSol.toFixed(2)} and β the imaginary part which is ${negDeterminant}</p>
     <p>Then apply the general solution y = e<sup>αx</sup>[c<sub>1</sub>cos(β) + c<sub>2</sub>sin(β)]</p>
-    <p>Therefore the equation is y = e<sup>${partSol}x</sup>[c<sub>1</sub>cos(${negDeterminant}) + c<sub>2</sub>sin(${negDeterminant})] </p>`
+    <p>Therefore the equation is y = e<sup>${partSol.toFixed(2)}x</sup>[c<sub>1</sub>cos(${negDeterminant}) + c<sub>2</sub>sin(${negDeterminant})] </p>`
   }
   result.append(quadraticSolutions)
   console.log(rootFirst, rootSecound);
