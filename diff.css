@@ -23,39 +23,6 @@
     src: url('./assets/font/Poppins-Regular.ttf');
 }
 
-:root{
-    --font-default: 1.5rem;
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins-Light', sans-serif;
-    box-sizing: border-box;
-}
-
-body{
-    /* display: flex;
-    justify-content: center; */
-    font-size: var(--font-default);
-    color: white;
-    background-color: black;
-    font-weight: 600;
-}
-sup{
-    color: red;
-    font-weight: bolder;
-}
-button{
-    font-size: var(--font-default);
-    font-weight: 600;
-    margin-top: 1rem;
-}
-@media (max-width: 550px) {
-    :root{
-        --font-default: 1rem;
-    }
-}
 
 .container{
     background-color: #111;

@@ -49,7 +49,6 @@ const solveQuadraticEquation = () => {
   let posDeterminant = (Math.sqrt(determinant) / 2*a);
   let negDeterminant = (Math.sqrt(-determinant) /2*a).toFixed(2);
   let partSol = (-b / (2 * a));
-  
   if (determinant > 0) {
     rootFirst = (partSol + posDeterminant).toFixed(2);
     rootSecound = (partSol - posDeterminant).toFixed(2);
@@ -117,3 +116,4 @@ window.addEventListener("scroll", ()=>{
 })
 
 document.querySelector(".solve").addEventListener("click", solveQuadraticEquation);
+
